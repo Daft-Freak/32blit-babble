@@ -85,6 +85,16 @@ jobs:
       run: |
         python -m pip install 32blit
 
+    - name: Pack words
+      if: runner.os == 'Windows'
+      shell: bash
+      run: cd main/assets && python pack.py 
+
+    - name: Pack words
+      if: runner.os != 'Windows'
+      shell: bash
+      run: cd main/assets && python3 pack.py 
+
     # Set up the cmake build environment
     - name: Create Build Environment
       run: cmake -E make_directory ${{runner.workspace}}/main/build
