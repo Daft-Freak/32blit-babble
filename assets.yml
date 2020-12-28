@@ -1,0 +1,18 @@
+assets.cpp:
+  assets/buttons.png: asset_buttons
+  assets/babblesheet.png: game_sheet
+
+  assets/8x12font.png:
+    name: tall_font_data
+    type: font/image
+    vertical_spacing: 0
+    space_width: 4
+  assets/16x24font.png:
+    name: large_font_data
+    type: font/image
+    vertical_spacing: 0
+    space_width: 4
+
+  assets/words_packed.bin:
+    name: word_data
+    type: raw/binary

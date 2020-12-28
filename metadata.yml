@@ -1,0 +1,8 @@
+title: Babble
+author: Daft_Freak
+description: Find as many words as you can in 90 seconds.
+version: v0.0.4
+icon:
+  file: assets/icon.png
+splash:
+  file: assets/splash.png
