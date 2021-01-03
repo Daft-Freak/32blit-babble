@@ -93,7 +93,6 @@ static void init_word()
 {
     // grab a random game
     current_game = blit::random() % num_games;
-    current_game = 0;
 
     BitReader bits(word_data, word_data_length);
 
