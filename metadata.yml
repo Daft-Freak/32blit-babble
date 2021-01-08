@@ -6,3 +6,5 @@ icon:
   file: assets/icon.png
 splash:
   file: assets/splash.png
+category: game
+url: https://github.com/Daft-Freak/32blit-babble
