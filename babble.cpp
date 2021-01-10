@@ -41,7 +41,7 @@ SaveData high_scores;
 
 const Font tall_font(tall_font_data);
 const Font large_font(large_font_data);
-SpriteSheet *game_sprites;
+Surface *game_sprites;
 
 int num_games = 0;
 
@@ -158,7 +158,7 @@ void init()
 {
     set_screen_mode(ScreenMode::hires);
 
-    game_sprites = SpriteSheet::load(game_sheet);
+    game_sprites = Surface::load(game_sheet);
 
     if(!read_save(high_scores))
         memset(&high_scores, 0, sizeof(high_scores));
